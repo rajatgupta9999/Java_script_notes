@@ -207,5 +207,175 @@
         </li>
     </ol>
     <hr>
+    <h3>Syntex of Conditional; statements</h3>
+    <ol>
+        <li><b>If Statements</b>:- <br>
+            let x=20; <br>
+            if (x % 2===0 ){ <br>
+            console.log("x is even"); <br>
+            } <br>
+            if (x % 2 !==0 ){ <br>
+            console.log("x is odd"); <br>
+            } <br>
+        </li>
+        <li><b><If-else></If-else> Statements</b>:- <br>
+            let age = 25;<br>
+            if (age>=18) { <br>
+            console.log("You can drive"); <br>
+            } else{ <br>
+            console.log("You can't drive"); <br>
+            } <br>
+        </li>
+        <li><b>else-if Statements</b>:-<br>
+            let marks=85; <br>
+            if (marks>=90) { <br>
+            console.log("Grade A"); <br>
+            } else if (marks>=80) { <br>
+            console.log("Grade B"); <br>
+            } else { <br>
+            console.log("Grade C"); <br>
+            } <br>
+        </li>
+    </ol>
+    <hr>
+    <h2>Loops In JavaScript</h2>
+    - Loops are a way to repeat code until a condition is met <br>
+    <ul type="none">
+        <li><b>Types of Loops</b>:-
+            <ol>
+                <li><b>for Loop</b>:- Runs a block of code a set number of times. You control the start, stop, and step.
+                    <br>
+                    <b>Syntax:-</b> for (initialization; condition; increment) {code}.
+                </li>
+                <li><b>while Loop</b>:- Executes code while a condition is true (good for unknown iterations). <br>
+                    <b>Syntax:-</b> while (condition) {code}.
+                </li>
+                <li><b>do...while Loop</b>:- Executes code at least once before checking the condition. <br>
+                    <b>Syntax:-</b> do {code} while (condition);
+                </li>
+                <li><b>for...of Loop</b>:- Loops over iterable objects (arrays, strings, etc.). Clean and modern. <br>
+                    <b>Syntax:-</b> for (const element of iterable) {code}
+                </li>
+                <li><b>for...in Loop</b>:- Loops over an object’s enumerable properties. Mostly for objects, not arrays.
+                    <br>
+                    <b>Syntax:-</b> for (const key in object) {code}
+                </li>
+                <ul type="disc">
+                    <li><b>break</b> Exits the loop early.</li>
+                    <li><b>continue</b> Skips to the next iteration.</li>
+                </ul>
+            </ol>
+        </li>
+    </ul>
+    <hr>
+    <h3>Loops syntax</h3>
+    <ol>
+        <li><b>For Loop</b>:-  <br>
+        For(i=1;i<=5;i++){ <br>
+            console.log("Rajat"); <br>
+        } <br>
+        </li>
+        <li><b>Do-while Loop</b>:-  <br>
+            let i=0; <br>
+            do{ <br>
+                console.log("Rajat"); <br>
+                i++; <br>
+            } while(i<=); <br>
+        </li>
+        <li><b>While Loop</b>:- 
+        let i=1;
+        while(i<=5){ <br>
+            console.log("Rajat"); <br>
+            i++; <br>
+        } <br>
+        </li>
+        <li><b>For-of Loop</b>:- used for strings and arrays <br>
+        let str="Rajat";  <br>
+        for (let i of str){ <br>
+            console.log("letter"); <br>
+        } <br>
+        </li>
+        <li><b>For-in Loop</b>:- works for objects <br>
+        let student={
+            name:"Rajat", <br>
+            age :20;
+            gender: "male";
+        };
+        for (let key in student){ <br>
+            console.log(key;student[key]); <br>
+        } <br>
+        - where key is a key in student like=["name.age.gender"];
+        - where value is a value in student(student(key)); like-"rajat",20,"male";
+        </li>
+    </ol>
+    <hr>
+    <h2>Strings in java script</h2>
+    - strings are fundamental data types in java script used to represent textual data. <br>
+    - strings are immutable in java script, meaning that once a string is created it cannot be changed. <br>
+    <ol>
+        <li><b>Creating string</b>:- <br>
+            let str='single quotes'; <br>
+            let str="Double quotes"; <br>
+            let str=`template literals`; <br>
+        </li>
+        <li><b>String properties</b>:- <br>
+            <ol>
+                <li><b>String Length</b>:- str.length:- returns string length. <br></li>
+                <li><b>String Index/Indices</b>:- strings are zero-indexed sequences of characters where each
+                    character can be accessed using its numerical position(index). <br>
+                    <b>Ex:-</b> <br>
+                    let str="Hello"; <br>
+                    access-"H" console.log(str[0]); //"H" <br>
+                    access-"e" console.log(str[1]); //"e" <br>
+                    access-"l" console.log(str[2]); //"l" <br>
+                    access-"l" console.log(str[3]); //"l" <br>
+                    access-"o" console.log(str[4]); //"o" <br>
+                </li>
+            </ol>
+        </li>
+        <li><b>String Methods in JS</b>:- The build-in function to manupulate a string.
+            <ol>
+                <li><b>.toUppercase()</b>:- used to convert a string to uppercase.</li>
+                <li><b>.toLowercase()</b>:- used to convert a string to lowercase.</li>
+                <li><b>.trim()</b>:- used to remove whitespaces from the string[from starting and ending].z</li>
+                <li><b>,slcie(start,end)</b>:- Returns a part of thr string from start to end. <br>
+                    <b>EX:-</b> <br>
+                    let str="Hello";<br>
+                    console.log(str.slice(1,4)); // ell
+                </li>
+                <li><b>.concat()</b>:-Joins 2 strings. <br>
+                    <b>EX:-</b> <br>
+                    let str1="Hello";<br>
+                    let str2="World";<br>
+                    console.log(str1.concat(str2)); //HelloWorld <br>
+                    - also use + for adding string.
+                </li>
+                <li><b>.replace(search variable,new variable)</b>:- use to replace variable in string <br>
+                    <b>EX:-</b> <br>
+                    let str="Hello";<br>
+                    console.log(atr.replace("H","Y")); //Yello
+                </li>
+                <li><b>.char At(idx)</b>:- Used to find out the character on given index in a string. <br>
+                    <b>EX:-</b> <br>
+                    let str="Hello";<br>
+                    console.log(str.charAt(0)); //h
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <hr>
+    <h2>Template Literals In JS</h2>
+    - A way to have embedded expressions in strings. <br>
+    <ul type="disc">
+        <li><b>String Interpolation</b>:- To create string by doing substitution of placeholder. ${Expression}. <br>
+            <b>Ex:-</b> <br>
+            let str={ <br>
+            name:`Rajat`; <br>
+            age:`20`; <br>
+            } <br>
+            cosnole.log(`${str.name} ${str.age}`);
+        </li>
+    </ul>
+    <hr>
 </body>
 </html>
