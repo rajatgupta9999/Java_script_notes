@@ -377,5 +377,76 @@
         </li>
     </ul>
     <hr>
+    <h2>Arrays in Js</h2>
+    - Arrays are ordered collection of values that can hold multiple items of any type. <br>
+    - An Arrays is a special type of object that can be used to store multiple values in a single variable, organized by
+    numeric indices. <br>
+    -Collection of items. <br>
+    <ol>
+        <li><b>
+                <h3>Creating Arrays</h3>
+                <ol>
+                    <li><b>Array literal</b>:-
+            </b>The most common way is to use square bracket [], listing element seprated by comma. <br>
+            <b>syntax</b>:- let array Name = [value1, value2, value3, value4, value5]; <br>
+        </li>
+        <li><b>Array Constructor[New Array]</b>:- You can use the array constructor to create an array either with
+            element or a specific length. <br>
+            <b>syntax</b>:- let array Name = new Array(value1, value2);
+        </li>
+        <li><b>Array with mixed types</b>:- Arrays can be a mixed type like - string,number,boolean. <br>
+            <b>Ex:-</b>let arr=["even",7,true];
+        </li>
+        <li><b>Empty arrays</b>:- empty arrays are useful for input by user.</li>
+    </ol>
+    </li>
+    <li>
+        <h3>Array indices</h3>
+        - Arrays Index are numeric position that identify where element are stored in a array. <br>
+        - Use arrays index to find out a position of an element in an array. <br>
+        <b>Syntax</b>:- arrayname[position]. <br>
+        <b>Ex:-</b> let arr=[2,3,45,56]; <br>
+        console.log(arr[0]); //output 2 <br>
+        - arrays are mutable <br>
+        <b>Ex</b>:- let arr=[2,3,45,56]; <br>
+        console.log(arr); <br>
+        let arr[0]=10; <br>
+        console.log(arr); //output 10,3,45,56 <br>
+    </li>
+    <li><b>
+            <h3>Looping over an array</h3>
+        </b>
+          - use loops for printing all element all element of an array. <br>
+          <b>Ex</b>:- let city=["Delhi","Mumbai","Agra"];
+          <ol>
+            <li><b>Use For-Loop</b>:- <br>
+            For(let c=0;c < city.length;c++){ <br>
+             console.log(city[c]); <br>
+            }
+            </li>
+            <li><b>Use For-of-Loop/For-in-Loop</b>:-  <br>
+            for(let cin city) { <br>
+                console.log(city); <br>
+            } <br>
+            </li>
+          </ol>
+    </li>
+    <li><b>
+            <h3>Array Methods</h3>
+        </b>
+          - Array method are Function attached  to array that let you perform common task like- adding,removing,transforming,or searching element.<br>
+          <ol>
+            <li><b>.push(element)</b>:- Adds element  to the end and returns the new array.</li>
+            <li><b>.pop()</b>:- Remove the last element and returns the removed element.</li>
+            <li><b>.toString</b>:- Converts a array to a string.</li>
+            <li><b>.concat(array)</b>:- Merge two or more array into a new array and returns a new array.</li>
+            <li><b>.unshift(element)</b>:- Adds element to the beginning of an array and returns the new array.</li>
+            <li><b>.shift()</b>:- Removes the first element and returns the removed element.</li>
+            <li><b>.slice(start,end)</b>:- returns  piece of a array.</li>
+            <li><b>.splice(start,delete count,items)</b>:- adds/remove elements at a specific index.</li>
+          </ol>
+    </li>
+    </ol>
+    <hr>
 </body>
 </html>
