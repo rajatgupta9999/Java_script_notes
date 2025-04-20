@@ -448,5 +448,88 @@
     </li>
     </ol>
     <hr>
+    <h2>For Each Loop In array[Higher order functions]</h2>
+    - The forEach loop in javascript is a method used to iterate over array element,executing a provided callback function for each element.its a clean, functional way to process arrays without needing a traditional for loop. <br> <br>
+    <b>Syntax:-</b> arr.forEach(callback(element[,index[arr]])[this Arg]) <br>
+    <b>Callback</b> function executed for each element, taking <u>up to three</u> arguments. <br>
+    <ol>
+        <li><b>element</b>:- The current element being processed in th array.</li>
+        <li><b>Index</b>:- The index of current  element</li>
+        <li><b>array</b>:- The array forEach was called on.</li>
+    </ol>
+    <b><u>Tip</u>:-</b><b>Higher order Function</b>:- Are functions that either take other function that either take other functions as arguments,return a function,or both. <br> 
+    <b>Ex:-</b>let arr=["a","b","c"]; <br>
+    arr.forEach((val)=>{ <br>
+        console.log(val); <br>
+    }) <br>
+    <hr> 
+    <h2>More Array Methods[Higher order Methods]</h2>
+    <ol>
+        <li><b>Map Method</b><br>- Creates <u>a new array</u> with the result of some operations.The value its callback returns are used to form new array. <br>
+        <b>Syntax:-</b> arr.map(callbackFnx(value,index,array)). <br>
+        <b>Ex:-</b> let arr=["2","3","4"]; <br>
+        let arr2=arr.map((val)=>{ <br>
+            return val*2; <br>
+        })<br>
+        console.log(arr2); <br>   
+        </li>
+        <li><b>Filter Method</b><br>- Creates a new array of element that give true for a condition/filter. e.g all even element.<br>
+        <b>Syntax:-</b> arr.filter(callback(currentvalue,index,array)). <br>
+        <b>Ex:-</b> let arr=[1,2,3,4,5,6,7,8]; <br>
+        let arr2=arr.filter((val)=>{
+            return val % 2 === 0; <br>
+        }) <br>
+        console.log(arr2); <br>
+        
+        </li>
+        <li><b>Reduce Method</b><br>- Perform some operations & reduce the array to a single value. it returns that single value. <br>
+        <b>Syntax:-</b> array.reduce(callback(accumulator,current value,idx,arr),initial value). <br>
+        <b>Ex:-</b> let arr=[1,2,3,4]; <br>
+        let arr2=arr.reduce((result,current)=>{ <br> 
+            return result + current; <br>
+        }) <br>
+        console.log(arr2); //10 <br>
+        </li>
+        <li><b>Array.form Method</b><br> - Use to create a new array from an iterator or  array-like objects. it's super handy method for converting things like strings,sets, or nodelists into arrays. so you can use array methods on them. <br>
+        <b>Syntax:-</b> Array.from(iterable,map-function?,thisArg?); <br>
+        <b>Ex:-</b> let n=5; <br>
+        let arr=Array.from({length:n},(_,i)=>i+1); <br>
+        </li>
+    </ol>
+    <hr>
+    <h2>Functions in Js</h2>
+    - JavaScript Functions are blocks of code of reusable code designed to perform specific tasks. They can be defined ,called,and customized with parameters,return values,and various syntaxes. <br> <br>
+
+    - A Function can return a value which can be used to assigned to a variable or used in an expression. <br> <br>
+    - Functions Can also be assigned to a variable.  
+    <ol>
+        <li><b>Function Declaration</b>:- a function is declared using the function keyword,fallowing by a name ,parameters(optional),and a code block. <br>
+        <b>Syntax:-</b>Function functionname(){ <br>
+              //code <br>
+              return value;  //optional <br>
+        } <br>
+       <b>Ex:-</b>Function fun(){ <br>
+        console.log("Hello World"); <br>
+       } 
+       <ul type="disc">
+        <li>
+             <b>Function which have specific msg</b> <br>
+             <b>Syntax:-</b> Function fname(msg){ <br>
+                console.log(msg); <br>
+             } <br>
+             - A function which have specific msg is called as function with parameter. <br>
+        </li>
+       </ul>
+        </li>
+        <li><b>Function Call</b>:- we will call the function to use a function. <br>
+        <b>Syntax:-</b> functionname();
+        </li>
+        <li><b>Arrow Function</b>:- Arrow functions are the shortcut method of declaring function. <br>
+            <b>Syntax:-</b> fname(parameter1,2) => { <br>
+                code; <br>
+            } <br>
+        </li>
+    </ol>
+    <hr>
 </body>
 </html>
