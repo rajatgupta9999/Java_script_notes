@@ -557,7 +557,7 @@
         <li>IT created by the browser when a page loads and is updated dynamically as the page changes.</li> <br>
         <li>Javascript can access and modify the DOM to create interact experiences.</li>
     </ul>
-    <h3>Dom Manipulation</h3>
+    <h3>Dom Manipulation[part 1]</h3>
     <ol>
         <li><b>Selecting Elements By Id</b>:- Selects an elements by its Id.</li>
         <b>Syntax:-</b>document.getElementBy("Id");
@@ -570,6 +570,39 @@
         <li><b>Selecting Elements By query selectorALL</b>:- selects the all element matching a css selector.</li>
         <b>Syntax:-</b>document.queryselectorAll("selector");
     </ol>
+    <h3>Dom Manipulation[part 2]</h3>
+<b>Attributes:-</b>Dom attributes manipulation in js.involves accessing,modifying,adding,or removing attributes of HTML elements using the Dom attributes are properties like-[id,class,src,href,name, etc.] that defines characteristics of an element. <br>
+<ol>
+    <li><b>Direct Property Access</b><br>
+    Many common attributes[e.g. id,class,name,src,href] can be accessed or modify directly as properties of the Dom element. <br>
+    <ul>
+        <li><b>Get</b>:- Access the property directly.</li>
+        <li><b>Set</b>:- Assign a new value to the property.</li>
+    </ul>
+    <b>Ex:-</b>let img = document.querySelecting("img"); <br>
+    img.src = "new-img.png";  //set source. <br>
+    img.alt = "new description" //set alternative. <br>
+    console.log(img.id); <br>
+    </li>
+    <li><b>Get/Set Attribute Value</b> <br>
+        - These methods allow you to work with any attributes,including custom once. <br>
+        <ol>
+            <li><b>Get</b>:- Retrieves the value of the specific attributes.<br>
+                <b>Syntax:- element.getAttribute("attribute");</b>
+            </li>
+            <li><b>Set</b>:- Sets or updates the value of the specific attributes.<br>
+                <b>Syntax:- element.setAttribute("attribute","value");</b>
+            </li>
+        </ol>
+        <b>Ex:-</b>let link = document.querySelector("a"); <br>
+        link.setAttribute("href","https://example.com"); //set href <br>
+        console.log(link.getAttribute("href")); <br>
+    </li>
+    <li><b>Remove Attribute</b> <br>
+        Removes the attributes entirely. <br>
+        <b>Syntax:-</b>element.remove("attributes");
+    </li>
+</ol>
     <h3>Dom Properties</h3>
     - We can access element by dom manipulation.after access the element we can change/check its value by Dom properties. <br>
     <ol>
