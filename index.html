@@ -701,5 +701,115 @@
         </li>
     </ol>
     <hr>
+    <h2>Events In JS </h2>
+    -The change in the state of an object is known as an event. <br>
+    -Events are fired to notify code of interesting changes that may affect code execution. <br>
+    -JavaScript events are actions or occurrences (e.g., clicks, key presses, mouse movements) that happen in the
+    browser and can be detected and handled using event listeners. They allow interactivity in web applications by
+    triggering code when specific events occur on DOM elements. <br>
+    <b>concept:-</b>
+    <ol>
+        <li><b>Event</b>:- A signal that something has happened (e.g., click, mouseover, keydown).</li>
+        <li><b>Event Listener</b>:- A function that "listens" for an event and executes when the event occurs.</li>
+        <li><b>Event Handler</b>:- The function or code that runs in response to the event.</li>
+        <li><b>Event Object</b>:- An object passed to the event handler containing details about the event (e.g.,
+            event.target, event.type).</li>
+    </ol>
+    <ol>
+        <li><b>
+                <h3>Event Handling</h3>
+            </b>
+            - A function that runs when the event occurs. <br>
+            <b>Syntax:-</b> node.event()=>{ <br>
+            //handle here <br>
+            } <br>
+            <b>Ex:-</b>let bta1= document.querySelector("btn1"); <br>
+            btn1.onclick =() =>{ <br>
+            console.log("Button have been clicked"); <br>
+            }; <br>
+        </li>
+        <li><b>
+                <h3>Event Object</h3>
+            </b>
+            - Event Object is automatically created when an event occurs.this object contains details about the event
+            and provides methods to control its behavior.it is argument to event handler function. <br>
+            <b>Syntax:-</b> node.event=(name the event here)=>{ <br>
+            console.log(event name.type); <br>
+            } <br>
+        </li>
+        <li><b>
+                <h3>Event Listener</h3>
+            </b>
+            - An event listener is a function or mechanism that "Listens" for a specific event on a Dom Element and
+            trigger a callback function. <br>
+            - A binding between an event,an element,and a handle function. <br>
+            <b>Syntax:-</b> element.addEventListener(event.handler[options]); <br>
+            <b>Ex:-</b>btn1.addEventListener("mouseover",()=>{ <br>
+            console.log("mouse is over the element"); <br>
+            }) <br>
+        </li>
+    </ol>
+    <h3>Popular Events</h3>
+    - Below are the List of popular and commonly used events. <br>
+    <ol>
+        <li><b>
+                <h4>Mouse Events</h4>
+            </b>
+            <ol>
+                <li><b>click</b>:- Triggered when an element is clicked.</li>
+                <li><b>dblclick</b>:- Triggered on a double-click.</li>
+                <li><b>mouseover</b>:- Triggered when the mouse pointer enters an element.</li>
+                <li><b>mouseout</b>:- Triggered when the mouse pointer leaves an element.</li>
+                <li><b>mousemove</b>:- Triggered when the mouse moves over an element.
+                </li>
+                <li><b>mousedown</b>:- Triggered when a mouse button is pressed.</li>
+                <li><b>mouseup</b>:- Triggered when a mouse button is released.
+                </li>
+            </ol>
+        </li>
+        <li><b>
+                <h4>Keyboard Events</h4>
+            </b>
+            <ol>
+                <li><b>keydown</b>:- Triggered when a key is pressed down.</li>
+                <li><b>keyup</b>:- Triggered when a key is released.</li>
+                <li><b>keypress</b>:- Triggered when a key is pressed and released (deprecated, prefer keydown).</li>
+            </ol>
+        </li>
+        <li><b>
+                <h4>Form Events</h4>
+            </b>
+            <ol>
+                <li><b>submit</b>:- Triggered when a form is submitted.</li>
+                <li><b>change</b>:- Triggered when an input element's value changes (e.g., <.input>, <.select>).</li>
+                <li><b>input</b>:- Triggered when an input element's value is modified (real-time).
+                </li>
+                <li><b>focus</b>:- Triggered when an element gains focus.</li>
+                <li><b>blur</b>:- Triggered when an element loses focus.</li>
+            </ol>
+        </li>
+        <li><b>
+                <h4>Window/Document Events</h4>
+            </b>
+            <ol>
+                <li><b>load</b>:- Triggered when a resource (e.g., page, image) finishes loading.</li>
+                <li><b>resize</b>:- Triggered when the browser window is resized.</li>
+                <li><b>scroll</b>:- Triggered when the user scrolls the page or an element.</li>
+                <li><b>unload</b>:- Triggered when the user leaves the page (less common).</li>
+            </ol>
+        </li>
+        <li><b>
+                <h4>Touch Events</h4>
+            </b>
+            <ol>
+                <li><b>touchstart</b>:- Triggered when a finger touches the screen.</li>
+                <li><b>touchmove</b>:- Triggered when a finger moves on the screen.
+                </li>
+                <li><b>touchend</b>:- Triggered when a finger is lifted from the screen.
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <hr>
 </body>
 </html>
